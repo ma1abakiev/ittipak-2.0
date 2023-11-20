@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+  color: #559ee2;
+}
+.icons {
+  display: flex;
+  gap: 24px;
+}
+.icon {
+  cursor: pointer;
+}
+.title {
+  font-size: 30px;
+  font-weight: 900;
+  color: #559ee2;
+}
