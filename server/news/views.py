@@ -6,7 +6,7 @@ from news.serializers import PostSerializer
 
 
 class PostVAPIViewPagination(PageNumberPagination):
-    page_size = 2
+    page_size = 30
     page_size_query_param = 'page_size'
     max_page_size = 100
 
@@ -33,5 +33,5 @@ class Post2APIView(ModelViewSet):
 
         queryset = Post2.objects.all()
         if category_id is not None:
-            queryset = Post.objects.filter(category_id=category_id)
+            queryset = Post2.objects.filter(category_id=category_id)
         return queryset
