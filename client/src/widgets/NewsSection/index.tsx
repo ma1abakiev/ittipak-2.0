@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import s from './index.module.css'
-import Filter from '../../features/Filter'
-import Cards from '../../features/Cards'
 import axios from 'axios'
 import { useQuery } from 'react-query'
+import { Box } from '@mui/material'
+import NewsCards from '../../features/NewsCards'
+import Filter from '../../features/Filter'
+import { Link } from 'react-router-dom'
 
 async function fetchCards(skip: number = 0) {
   const { data } = await axios.get(
-    `http://localhost:5000/posts?skip=${skip}limit=10`
+    `http://localhost:5000/posts?skip=${skip}&limit=10`
   )
   return data
 }
@@ -35,10 +36,19 @@ const NewsSection = () => {
   return (
     <section>
       <div className="container">
-        <div className={s.content}>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            mt: '50px',
+          }}
+        >
           <Filter></Filter>
-          <Cards setPage={setPage} page={page} data={data}></Cards>
-        </div>
+          <Link to={`/news/${data[0].id}`}>
+            <NewsCards setPage={setPage} page={page} data={data}></NewsCards>
+          </Link>
+        </Box>
       </div>
     </section>
   )
