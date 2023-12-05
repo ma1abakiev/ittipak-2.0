@@ -18,13 +18,17 @@ import {
   BookmarkAdd,
   BookmarkRemove,
 } from '@mui/icons-material'
-
 import { red } from '@mui/material/colors'
 import { CardType } from './type'
 
-export default function NewsCard({ date, title, text, img }: CardType) {
+export default function NewsCard({
+  title,
+  photo,
+  subtitle,
+  created,
+}: CardType) {
   return (
-    <Card sx={{ maxWidth: 845 }}>
+    <Card sx={{ width: 845 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -37,12 +41,18 @@ export default function NewsCard({ date, title, text, img }: CardType) {
           </IconButton>
         }
         title={title}
-        subheader={date}
+        subheader={created}
       />
-      <CardMedia component="img" height="250" image={img} alt="Uyghur" />
+      <CardMedia
+        src={photo}
+        component="img"
+        height="250"
+        image={photo}
+        alt="Uyghur"
+      />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          {text}
+          {subtitle}
         </Typography>
       </CardContent>
       <CardActions

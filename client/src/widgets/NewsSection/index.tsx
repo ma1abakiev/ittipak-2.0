@@ -4,12 +4,9 @@ import { useQuery } from 'react-query'
 import { Box } from '@mui/material'
 import NewsCards from '../../features/NewsCards'
 import Filter from '../../features/Filter'
-import { Link } from 'react-router-dom'
 
-async function fetchCards(skip: number = 0) {
-  const { data } = await axios.get(
-    `http://localhost:5000/posts?skip=${skip}&limit=10`
-  )
+async function fetchCards() {
+  const { data } = await axios.get(`http://localhost:8000/api/post/1/`)
   return data
 }
 
@@ -45,9 +42,7 @@ const NewsSection = () => {
           }}
         >
           <Filter></Filter>
-          <Link to={`/news/${data[0].id}`}>
-            <NewsCards setPage={setPage} page={page} data={data}></NewsCards>
-          </Link>
+          <NewsCards setPage={setPage} page={page} data={data}></NewsCards>
         </Box>
       </div>
     </section>

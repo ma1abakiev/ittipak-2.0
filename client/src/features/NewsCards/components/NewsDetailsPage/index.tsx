@@ -1,27 +1,30 @@
 // features/news/components/NewsDetailsPage.jsx
 import React, { useState, useEffect } from 'react'
-import { Paper, Typography, Container } from '@mui/material'
+import {
+  Typography,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Checkbox,
+  IconButton,
+} from '@mui/material'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-
-interface Params {
-  id: string
-}
-
-interface NewsData {
-  title: string
-  content: string
-  // Добавьте другие поля, если они присутствуют в ваших данных новости
-}
+import { Box } from '@mui/system'
+import { CardType } from '../NewsCard/type'
+import { Comment, Favorite } from '@mui/icons-material'
 
 const NewsDetailsPage: React.FC = () => {
-  const { id } = useParams<Params>()
-  const [newsData, setNewsData] = useState<NewsData | null>(null)
+  const { id } = useParams<{ id: string }>()
+  const [newsData, setNewsData] = useState<CardType>()
 
   useEffect(() => {
     const fetchNewsById = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/posts/${id}`)
+        const response = await axios.get(
+          `http://localhost:8000/api/post/1/${id}`
+        )
         setNewsData(response.data)
       } catch (error) {
         console.error('Error fetching news by id:', error)
@@ -34,16 +37,45 @@ const NewsDetailsPage: React.FC = () => {
   if (!newsData) {
     return <div>Loading...</div>
   }
-
-  const { title, content } = newsData
-
   return (
-    <Container maxWidth="md">
-      <Paper>
-        <Typography variant="h4">{title}</Typography>
-        <Typography variant="body1">{content}</Typography>
-      </Paper>
-    </Container>
+    <Card sx={{ maxWidth: 1200, margin: '50px auto', padding: '150px' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <CardMedia
+          component="img"
+          alt="green iguana"
+          image={newsData.photo}
+          sx={{
+            width: 800,
+            height: 'auto',
+          }}
+        />
+      </Box>
+      <CardContent>
+        <Box sx={{ textAlign: 'center', pt: 10 }}>
+          <Typography
+            gutterBottom
+            variant="h1"
+            component="h2"
+            sx={{ textAlign: 'center' }}
+          >
+            {newsData.title}
+          </Typography>
+        </Box>
+        <div
+          dangerouslySetInnerHTML={{ __html: newsData.content }}
+          color="text.secondary"
+        ></div>
+      </CardContent>
+      <CardActions sx={{ pt: 10 }}>
+        <Checkbox
+          icon={<Favorite />}
+          checkedIcon={<Favorite color="primary" />}
+        ></Checkbox>
+        <IconButton>
+          <Comment />
+        </IconButton>
+      </CardActions>
+    </Card>
   )
 }
 
