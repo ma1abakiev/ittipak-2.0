@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Post, Category, Post2
+from .models import Post, Category, Post2, Comment
 
 
 @admin.register(Post)
@@ -19,3 +19,9 @@ class PostAdmin(admin.ModelAdmin):
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'name')
     list_display_links = ('id', 'name')
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'author', 'post', 'created')
+    list_display_links = ('id', 'author')
