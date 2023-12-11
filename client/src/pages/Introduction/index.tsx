@@ -1,17 +1,22 @@
 import Header from '../../widgets/Header'
 import NewsSection from '../../widgets/NewsSection'
-import s from './index.module.css'
-import Footer from '../../widgets/Footer'
+import { Box } from '@mui/material'
+// import Footer from '../../widgets/Footer'
 
 const Introduction = () => {
   return (
-    <div className={s.page}>
-      <div className={s.container}>
+    <>
+      <Box
+        sx={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+        }}
+      >
         <Header></Header>
         <NewsSection></NewsSection>
-        <Footer></Footer>
-      </div>
-    </div>
+      </Box>
+      {/* <Footer></Footer> */}
+    </>
   )
 }
 

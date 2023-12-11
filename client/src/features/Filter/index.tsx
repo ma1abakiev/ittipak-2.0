@@ -1,33 +1,36 @@
-import s from './index.module.css'
+import { Box, Typography } from '@mui/material'
+import Checkbox from '@mui/material/Checkbox'
+
 const Filter = () => {
   return (
-    <div>
-      <h4 className={s.title}>Фильтрация</h4>
-      <div className={s.checkboxs}>
-        <div className={s.item}>
-          <input type="checkbox" className={s.checkbox} />
-          <span className={s.text}>Спорт</span>
-        </div>
-        <div className={s.item}>
-          <input type="checkbox" className={s.checkbox} />
-          <span className={s.text}>Политика</span>
-        </div>
-        <div className={s.item}>
-          <input type="checkbox" className={s.checkbox} />
-          <span className={s.text}>Звезды</span>
-        </div>
-        <div className={s.item}>
-          <input type="checkbox" className={s.checkbox} />
-          <span className={s.text}>Искусство</span>
-        </div>
-        <div className={s.item}>
-          <input type="checkbox" className={s.checkbox} />
-          <span className={s.text}>Мода</span>
-        </div>
-      </div>
-      <button className={s.btn}>Применить</button>
-    </div>
+    <>
+      <Box>
+        <Typography component={'h3'} variant="h3">
+          Категории
+        </Typography>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            mt: '50px'
+          }}
+        >
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Checkbox defaultChecked />
+            <Typography>Новые</Typography>
+          </Box>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Checkbox defaultChecked />
+            <Typography>Старые</Typography>
+          </Box>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Checkbox defaultChecked />
+            <Typography>Популярные</Typography>
+          </Box>
+        </Box>
+      </Box>
+    </>
   )
 }
-
 export default Filter

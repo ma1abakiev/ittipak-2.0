@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -51,7 +51,7 @@
     {
       "id": 7,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -75,7 +75,7 @@
     {
       "id": 10,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -83,7 +83,7 @@
     {
       "id": 11,
       "title": "Ramzan",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -91,7 +91,7 @@
     {
       "id": 12,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -99,7 +99,7 @@
     {
       "id": 13,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -107,7 +107,7 @@
     {
       "id": 14,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -115,7 +115,7 @@
     {
       "id": 15,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -123,7 +123,7 @@
     {
       "id": 16,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -131,7 +131,7 @@
     {
       "id": 17,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -139,7 +139,7 @@
     {
       "id": 18,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -147,7 +147,7 @@
     {
       "id": 19,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -155,7 +155,7 @@
     {
       "id": 20,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -163,7 +163,7 @@
     {
       "id": 21,
       "title": "Ramzan",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -171,7 +171,7 @@
     {
       "id": 22,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -179,7 +179,7 @@
     {
       "id": 23,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -187,7 +187,7 @@
     {
       "id": 24,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -195,7 +195,7 @@
     {
       "id": 25,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -203,7 +203,7 @@
     {
       "id": 26,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAB4CAMAAABsOSjPAAAAVFBMVEVVnuL///9QnOFLmuF8sej3+v1CluDz+P1HmOA7k9+uzvBmpuT7/P5squXW5vdwrObC2vPp8vvf6/mUv+yNu+qEtumbw+271vLQ4vamye600fBdouPFQL6cAAACmElEQVR4nO2aiY6jMAyGgwMhhPsIZcv7v+cG2pndZCidrEYhXvmTKlWqED/GteODMYIgCIIgCIIgCIIgCIIg/nPAcLUGDwCkkMDWlW1fOALpIKGcVNPnO/1y1yWTcesG0aqmSiyqRtWCX63sJRy0q/ipe9AsTtkgdHOk+MGgRYROwusTyRtNGZuxQcz5ueYkyeciKmMD6w5EDrepXY0zr+3UDdszdSwi1cCHr048t1zKLcOYD5e8nXvjIvEkHCh7V/JSC0cfmHC4JH0ZiWqQruZcH1oUpM77ODwEmOsb6mV0A3EbolBdOP/BbDxJ2yDnTgYU9wI+Oq5Rn4uS6Xi5qaG243OevkshUK9BlJ1QOHkwff/yLzc017bmX14Oe418N3Iswudi7feIPwVMtkN7pQ5I8/QKWxe2oZWfc6TVFakGSkuzpwRIs+SCoC2Vkwm9rt5EJ+OfCAmBakkr3lWeh6FddFY/LgLJWqUDqHYSy+J5y110Mhj7gizqe5MMfm/q33Bih28Ae4hObpKlqjcFcZhjq+3SlW/8eopOumcIensA+BHEYgVp33t+iH5yD+EcJkpbh/++8LnWFDLF/HeTJNQ5u7As5ZPCOS91Z/V1qlDVo7REd98VbWw8dW6FNofKMmD75Ddvu44HXZ1bGIdmSEWjdA+Uf0SUIQ9lckGZxlEemKBEeDRFWQTgLLdQFrYoWwhu/MhQNGtQtsVQNiBxtnpxNtVRji++DoqqOf5BEc6RnFHizvJzfbgEBDya4efhmLlpIx8z4xzov16dGNvV/Bbn6gTOJRWGch2I4Vy8YihX3DZA1KrJHMWNKiNeJtwwBeqqP9c2h0bFv7a5sy/IckwLsp8gW0UmCIIgCIIgCIIgCIIgCCI4vwF9Lh/PWTu+kQAAAABJRU5ErkJggg=="
@@ -211,7 +211,7 @@
     {
       "id": 27,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -219,7 +219,7 @@
     {
       "id": 28,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -227,7 +227,7 @@
     {
       "id": 29,
       "title": "Заголовок новости",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
@@ -235,7 +235,7 @@
     {
       "id": 30,
       "title": "Umida",
-      "date": "29.11.2022",
+      "date": "29 September 2022",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
       "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAB6CAMAAADKxjLHAAAAVFBMVEVVnuL///9Om+FKmeFDluDB2fPs8/s3kt+91vKNu+qAtOiGuOnI3fSRveuhxu77/f/f6/l2r+fX5/dqqeVhpOTP4vaawuynye6uzvDl7/q30/Ly9/xl+zKCAAACmElEQVR4nO2aa5OrIAyGMaAoFrEq2tb//z+PdLs7i7UXdneQzMnzpe10Or6kIRcIYwRBEARBEARBEARBEARBEP8JAMAXlpe9lbwPCNYr3Uyn09Ro1TOOQTsIqfK2MNkNU7R5LUXi0jmrbLaBrZavkgWkPm+pdrRapmpzqIpHqh1FlaRwzg/PVDsOCe5Qrs2GUnNuO3uwtjvP149Val4umg3V3agGBlwsZh6OOl8WZhqxt1IPuPeRdpTim1/AEiBra7I8JVcR5Vr1rDcCH4DqsjIdV7nbkWZ6EPRAKnNIRfidbxfHx9L40J3SEA46LNyJi07Cx2H2ZdtXqkD3UYQ9h68Kkvx1pIMhgq5XGpQv+5yED7wG/JqkGIJ093utkle+ucegWCFKtZdwv3C1MujHIp/3cXWo/WrqGGY+kWd52Er/iFWmDM3hi+6s2cNT+K/MfdVtvu1kiNSHgr8r29D/3On+ipyc9/oQuvKfsaoDp9DC46o7c/UKl1LbIotVunjRxASn7w/dWSX6sXNvYpWKvZd02uCYdtM9248Sx4QlrR8DytuW4da66f5ERTL3qoK9hD0WuOSdF0VjRUTwG4YmQDdwdpz80qaL1jLD5D347XZgsfRwaVfnFiZejQUn78n1uw9W5arVcLJ1vO4NrW6sfjIi3ZdY4yDSvIM1z6Otq7DWsVj7hr/o0+Yd+jS0fTHWcwis5z54z9mQnmuiPUfGem6P9p5kSZqrDgDJvRTWe8Cwe9c6nXvXzXvu8eE9d0qTBVtzBU36cwXOxzfGT/w5Dre01OY4XMJ/NjfTpjo349pzlHNKDOtcGEM7h8fc3GO9PfdYpzz36HDhrkQ3Z3oFOMK53hsY56gJgiAIgiAIgiAIgiAIgiB25B9EKB8rCmf/UQAAAABJRU5ErkJggg=="
