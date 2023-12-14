@@ -6,7 +6,7 @@ import NewsCards from '../../features/NewsCards'
 import Filter from '../../features/Filter'
 
 async function fetchCards() {
-  const { data } = await axios.get(`http://localhost:8000/api/post/1/`)
+  const { data } = await axios.get(`http://localhost:8000/api/post/`)
   return data
 }
 
