@@ -20,15 +20,17 @@ import {
 } from '@mui/icons-material'
 import { red } from '@mui/material/colors'
 import { CardType } from './type'
+import { Link } from 'react-router-dom'
 
 export default function NewsCard({
   title,
   photo,
   subtitle,
   created,
+  id,
 }: CardType) {
   return (
-    <Card sx={{ width: 845 }}>
+    <Card sx={{ maxWidth: 845 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -43,13 +45,15 @@ export default function NewsCard({
         title={title}
         subheader={created}
       />
-      <CardMedia
-        src={photo}
-        component="img"
-        height="250"
-        image={photo}
-        alt="Uyghur"
-      />
+      <Link to={`/news/${id}`}>
+        <CardMedia
+          src={photo}
+          component="img"
+          height="250"
+          image={photo}
+          alt="Uyghur"
+        />
+      </Link>
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {subtitle}

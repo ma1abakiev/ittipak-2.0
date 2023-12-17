@@ -5,8 +5,10 @@ import { Box } from '@mui/material'
 import NewsCards from '../../features/NewsCards'
 import Filter from '../../features/Filter'
 
-async function fetchCards() {
-  const { data } = await axios.get(`http://localhost:8000/api/post/`)
+async function fetchCards(skip: number = 0) {
+  const { data } = await axios.get(
+    `http://localhost:8000/api/post/?skip=${skip}limit=10`
+  )
   return data
 }
 
@@ -14,7 +16,7 @@ const NewsSection = () => {
   const [page, setPage] = useState(1)
   const { data, isError, isLoading } = useQuery(
     ['cards', page],
-    () => fetchCards(),
+    () => fetchCards(page),
     {
       keepPreviousData: true,
     }

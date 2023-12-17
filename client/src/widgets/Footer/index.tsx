@@ -10,8 +10,8 @@ const Footer = () => {
           sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
           elevation={3}
         >
-          <BottomNavigation showLabels>
-            <Link to={'/'}>
+          <BottomNavigation>
+            <Link to={'/home'}>
               <BottomNavigationAction label="Home" icon={<Home />} />
             </Link>
             <Link to={'/favorites'}>

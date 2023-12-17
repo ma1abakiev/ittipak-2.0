@@ -23,7 +23,7 @@ const NewsDetailsPage: React.FC = () => {
     const fetchNewsById = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/post/1/${id}`
+          `http://localhost:8000/api/post/${id}`
         )
         setNewsData(response.data)
       } catch (error) {
