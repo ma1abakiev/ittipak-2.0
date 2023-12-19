@@ -26,13 +26,16 @@ $api.interceptors.response.use(
     ) {
       originalRequest._isRetry = true
       try {
-        const response = await axios.get<AuthState>(`${API_URL}/refresh`, {
-          withCredentials: true,
-        })
+        const response = await axios.get<AuthState>(
+          `${API_URL}/token/refresh`,
+          {
+            withCredentials: true,
+          }
+        )
         localStorage.setItem('token', response.data.tokens.access)
         return $api.request(originalRequest)
       } catch (e) {
-        console.log('НЕ АВТОРИЗОВАН')
+        console.log('НЕ АВТОРИЗОВАН, ошибка в интерсепторе', e)
       }
     }
     throw error

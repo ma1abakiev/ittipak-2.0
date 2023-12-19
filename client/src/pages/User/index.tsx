@@ -3,75 +3,131 @@ import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 import { setUser } from './slices/authSlice'
 import AuthService from './services'
+import { Button, Container, Grid, TextField, Typography } from '@mui/material'
 
-const UserPage = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+const RegistrationPage = () => {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    password_confirm: '',
+  })
+
   const dispatch = useDispatch()
 
-  const handleLogin = async () => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }))
+  }
+  const handleRegistration = async () => {
     try {
-      const response = await AuthService.login(email, password)
+      const response = await AuthService.register(
+        formData.username,
+        formData.email,
+        formData.password,
+        formData.password_confirm
+      )
       console.log(response.data)
+
       dispatch(
         setUser({
           id: response.data.id,
-          first_name: response.data.first_name,
-          last_name: response.data.last_name,
-          nickname: response.data.nickname,
-          phone_number: response.data.phone_number,
-          profile_photo: response.data.profile_photo,
+          username: response.data.username,
           email: response.data.email,
           tokens: response.data.tokens,
         })
       )
 
-      toast.success('Вы успешно авторизовались!')
+      toast.success('Вы успешно зарегистрировались!')
     } catch (e) {
-      toast.error('Проверьте правильность логина или пароля!')
+      toast.error('Ошибка при регистрации. Пожалуйста, проверьте данные.')
       console.log(e)
     }
   }
+  const handleLogin = async () => {
+    try {
+      const response = await AuthService.login(
+        formData.email,
+        formData.password
+      )
+      console.log(response)
 
-  const storedUser = localStorage.getItem('user')
-  const user = storedUser ? JSON.parse(storedUser) : {}
+      toast.success('Вы успешно Вошли')
+    } catch (e) {
+      console.log(`Ошибка Ошибка Ошибка ${e}`)
+      toast.error('ошибочка')
+    }
+  }
+
+  console.log(formData)
+
   return (
-    <div className="container">
-      <div className="auth__content">
-        <div className="auth__content-form">
-          <h2 className="auth__form-title">Вход в систему</h2>
-          <div className="auth__form-box">
-            <label htmlFor="email-input">Email</label>
-            <input
-              type="email"
-              id="email-input"
-              className="auth__form-email"
-              placeholder="youremail@gmail.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="auth__form-box">
-            <label htmlFor="password-input">Пароль</label>
-            <div className="auth__input-password">
-              <input
-                type="password"
-                id="password-input"
-                className="auth__form-pass"
-                placeholder="Ваш пароль"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-          </div>
-
-          <button className="auth__submit-btn" onClick={() => handleLogin()}>
-            Войти
-          </button>
-        </div>
-      </div>
-    </div>
+    <Container component="main" maxWidth="xs">
+      <Typography component="h1" variant="h5">
+        Регистрация
+      </Typography>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            fullWidth
+            label="Username"
+            name="username"
+            onChange={handleChange}
+            value={formData.username}
+            required
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            fullWidth
+            label="Email"
+            name="email"
+            onChange={handleChange}
+            value={formData.email}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="password"
+            name="password"
+            type="password"
+            onChange={handleChange}
+            value={formData.password}
+            required
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="Password repeat"
+            name="password_confirm"
+            type="password"
+            onChange={handleChange}
+            value={formData.password_confirm}
+          />
+        </Grid>
+      </Grid>
+      <Button
+        fullWidth
+        variant="contained"
+        color="primary"
+        onClick={handleRegistration}
+      >
+        Зарегистрироваться
+      </Button>
+      <Button
+        fullWidth
+        variant="contained"
+        color="primary"
+        onClick={handleLogin}
+      >
+        Войти
+      </Button>
+    </Container>
   )
 }
 
-export default UserPage
+export default RegistrationPage

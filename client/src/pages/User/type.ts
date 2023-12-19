@@ -6,10 +6,6 @@ export interface Tokens {
 export interface AuthState {
   id: number | null
   email: string
-  nickname: string
-  first_name: string
-  last_name: string
-  phone_number: string
-  profile_photo: string
+  username: string
   tokens: Tokens
 }
