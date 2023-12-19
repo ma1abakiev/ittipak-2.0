@@ -61,8 +61,6 @@ const RegistrationPage = () => {
     }
   }
 
-  console.log(formData)
-
   return (
     <Container component="main" maxWidth="xs">
       <Typography component="h1" variant="h5">
