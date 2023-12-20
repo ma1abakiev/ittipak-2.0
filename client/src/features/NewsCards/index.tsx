@@ -13,8 +13,6 @@ const NewsCards: React.FC<NewsCardProps> = ({ data, page, setPage }) => {
     setPage(value)
   }
 
-  console.log(data)
-
   return (
     <section>
       {data.results

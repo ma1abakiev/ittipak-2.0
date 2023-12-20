@@ -6,11 +6,14 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import { ColorModeContext, useMode } from './theme'
 import NewsDetailsPage from '../features/NewsCards/components/NewsDetailsPage'
 import FavoritesPage from '../pages/Favorites'
-import UserPage from '../pages/User'
 import Layout from '../widgets/Layout/Layout'
 import Home from '../pages/Home'
 import { Provider } from 'react-redux'
 import store from './store'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import LoginPage from '../pages/User/Login'
+import RegistrationPage from '../pages/User/Registration'
 
 const queryClient = new QueryClient()
 
@@ -23,6 +26,7 @@ const App = () => {
         <ColorModeContext.Provider value={colorMode}>
           <ThemeProvider theme={theme}>
             <CssBaseline></CssBaseline>
+            <ToastContainer></ToastContainer>
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Layout />}>
@@ -30,7 +34,11 @@ const App = () => {
                   <Route path="/news" element={<News />}></Route>
                   <Route path="/news/:id" element={<NewsDetailsPage />}></Route>
                   <Route path="/favorites" element={<FavoritesPage />}></Route>
-                  <Route path="/user" element={<UserPage />}></Route>
+                  <Route path="/login" element={<LoginPage />}></Route>
+                  <Route
+                    path="/registration"
+                    element={<RegistrationPage />}
+                  ></Route>
                 </Route>
               </Routes>
             </BrowserRouter>

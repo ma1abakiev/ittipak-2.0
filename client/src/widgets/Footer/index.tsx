@@ -17,7 +17,7 @@ const Footer = () => {
             <Link to={'/favorites'}>
               <BottomNavigationAction label="Favorites" icon={<Favorite />} />
             </Link>
-            <Link to={'/user'}>
+            <Link to={'/login'}>
               <BottomNavigationAction label="Me" icon={<Person />} />
             </Link>
           </BottomNavigation>

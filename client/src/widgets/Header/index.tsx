@@ -16,6 +16,10 @@ import LightModeIcon from '@mui/icons-material/LightMode'
 
 import { ColorModeContext } from '../../App/theme'
 import { Checkbox } from '@mui/material'
+import { Link } from 'react-router-dom'
+import { logout } from '../../pages/User/slices/authSlice'
+import { toast } from 'react-toastify'
+import { useDispatch } from 'react-redux'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -59,6 +63,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function Header() {
   const { toggleColorMode } = useContext(ColorModeContext)
+  const dispatch = useDispatch()
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
@@ -83,7 +88,14 @@ export default function Header() {
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget)
   }
-
+  const handleExit = async () => {
+    try {
+      dispatch(logout())
+      toast.success('Выход')
+    } catch (e) {
+      toast.error('Выйти не удалось')
+    }
+  }
   const menuId = 'primary-search-account-menu'
   const renderMenu = (
     <Menu
@@ -101,8 +113,10 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link to={'/login'}>My account</Link>
+      </MenuItem>
+      <MenuItem onClick={handleExit}>Exit</MenuItem>
     </Menu>
   )
 
