@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import permissions, viewsets, status
+from rest_framework import permissions, viewsets, status, generics
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -26,7 +26,7 @@ class PostVAPIViewPagination(PageNumberPagination):
     max_page_size = 100
 
 
-class PostAPIView(viewsets.ReadOnlyModelViewSet):
+class PostAPIView(generics.ListAPIView):
     serializer_class = PostSerializer
     pagination_class = PostVAPIViewPagination
 

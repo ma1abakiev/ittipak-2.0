@@ -21,6 +21,7 @@ import {
 import { red } from '@mui/material/colors'
 import { CardType } from './type'
 import { Link } from 'react-router-dom'
+import $api from '../../../../App/http/auth'
 
 export default function NewsCard({
   title,
@@ -29,6 +30,12 @@ export default function NewsCard({
   created,
   id,
 }: CardType) {
+  const toggleFavorite = () => {
+    $api.post('http://localhost:8000/api/user/favorite/toggle/', {
+      post_id: id,
+    })
+  }
+
   return (
     <Card sx={{ maxWidth: 845 }}>
       <CardHeader
@@ -76,6 +83,8 @@ export default function NewsCard({
           </IconButton>
         </Box>
         <Checkbox
+          // checked={}
+          onClick={toggleFavorite}
           icon={<BookmarkAdd />}
           checkedIcon={<BookmarkRemove />}
         ></Checkbox>

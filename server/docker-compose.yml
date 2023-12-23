@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  ittipak-server:
+  server:
     build:
       context: .
     container_name: ittipak
@@ -11,4 +11,4 @@ services:
     volumes:
       - .:/ittipak_server
     ports:
-      - "8000:8000"
+      - '8000:8000'

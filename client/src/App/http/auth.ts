@@ -1,5 +1,7 @@
 import axios from 'axios'
+import { AuthState } from '../../pages/User/type'
 //base url
+
 export const API_URL = `http://localhost:8000/api/user/`
 
 const $api = axios.create({
@@ -27,7 +29,9 @@ $api.interceptors.response.use(
       const originalRequest = error.config
       originalRequest._isRetry = true
       try {
-        const token = JSON.parse(localStorage.getItem('user'))
+        const token = JSON.parse(
+          localStorage.getItem('user') || '{}'
+        ) as AuthState
         if (token) {
           const response = await axios.post(
             'http://localhost:8000/api/user/token/refresh/',

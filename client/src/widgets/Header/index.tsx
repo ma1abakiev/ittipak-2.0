@@ -13,9 +13,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle'
 import MoreIcon from '@mui/icons-material/MoreVert'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 import LightModeIcon from '@mui/icons-material/LightMode'
-
 import { ColorModeContext } from '../../App/theme'
-import { Checkbox } from '@mui/material'
+import { Button, Checkbox } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { logout } from '../../pages/User/slices/authSlice'
 import { toast } from 'react-toastify'
@@ -114,7 +113,9 @@ export default function Header() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>
-        <Link to={'/login'}>My account</Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} to={'/login'}>
+          My account
+        </Link>
       </MenuItem>
       <MenuItem onClick={handleExit}>Exit</MenuItem>
     </Menu>
@@ -181,6 +182,17 @@ export default function Header() {
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
+          <Box>
+            <Link to={'/home'}>
+              <Button color="secondary">Home</Button>
+            </Link>
+            <Link to={'/favorites'}>
+              <Button color="secondary">Favorites</Button>{' '}
+            </Link>
+            <Link to={'/login'}>
+              <Button color="secondary">Favorites</Button>{' '}
+            </Link>
+          </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Checkbox
               size="medium"
