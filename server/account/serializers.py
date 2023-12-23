@@ -1,17 +1,20 @@
 from django.contrib.auth import authenticate
 from rest_framework import serializers
+from rest_framework.relations import ManyRelatedField
 
-from account.models import User, Favorite
+from account.models import User
+from news.serializers import PostSerializer
 
 
 class UserSerializer(serializers.ModelSerializer):
     """
     Serializer class to serialize CustomUser model.
     """
+    favorite_posts = PostSerializer(many=True, read_only=True)
 
     class Meta:
         model = User
-        fields = ("id", "username", "email")
+        fields = '__all__'
 
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
@@ -52,10 +55,3 @@ class UserLoginSerializer(serializers.Serializer):
         if user and user.is_active:
             return user
         raise serializers.ValidationError("Incorrect Credentials")
-
-
-class FavoriteSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Favorite
-        fields = '__all__'

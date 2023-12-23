@@ -1,3 +1,5 @@
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 from rest_framework import status, generics
 from rest_framework.generics import GenericAPIView, RetrieveUpdateAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -5,9 +7,8 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from account import serializers
-from account.models import Favorite
-from account.serializers import FavoriteSerializer
 from news import permissions
+from news.models import Post
 from news.serializers import PostSerializer
 
 
@@ -77,36 +78,16 @@ class UserAPIView(RetrieveUpdateAPIView):
         return self.request.user
 
 
-class FavoriteToggleView(generics.CreateAPIView, generics.DestroyAPIView):
-    serializer_class = FavoriteSerializer
+class FavoriteToggleView(generics.UpdateAPIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request, *args, **kwargs):
         post_id = request.data.get('post_id')
         user = request.user
+        post = get_object_or_404(Post, pk=post_id)
+        if post in user.posts.all():
+            user.posts.remove(post)
+            return HttpResponse(status=200)
+        user.posts.add(post)
+        return HttpResponse(status=200)
 
-        favorite_exists = Favorite.objects.filter(user=user, post_id=post_id).exists()
-
-        if favorite_exists:
-            Favorite.objects.filter(user=user, post_id=post_id).delete()
-            return Response({'message': 'Product removed from favorites'}, status=status.HTTP_204_NO_CONTENT)
-        else:
-            serializer = self.get_serializer(data={'user': user.id, 'post': post_id})
-            serializer.is_valid(raise_exception=True)
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-
-class UserFavoritesListView(generics.ListAPIView):
-    serializer_class = FavoriteSerializer
-    permission_classes = [IsAuthenticated]
-
-    def get_queryset(self):
-        user = self.request.user
-        return Favorite.objects.filter(user=user)
-
-    def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        posts = [fav.post for fav in queryset]
-        serializer = PostSerializer(posts, many=True)
-        return Response(serializer.data)

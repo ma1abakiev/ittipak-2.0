@@ -36,6 +36,7 @@ class UserManager(BaseUserManager):
 
 class User(AbstractUser):
     email = models.EmailField(_("email address"), unique=True)
+    favorite_posts = models.ManyToManyField(Post)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
@@ -44,11 +45,3 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.email
-
-
-class Favorite(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE)
-
-    class Meta:
-        unique_together = ('user', 'post')

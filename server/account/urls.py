@@ -9,7 +9,6 @@ urlpatterns = [
     path("token/refresh/", TokenRefreshView.as_view(), name="token-refresh"),
     path("logout/", views.UserLogoutAPIView.as_view(), name="logout-user"),
 
-    path('favorite/', views.UserFavoritesListView.as_view(), name='user-favorite'),
     path('favorite/toggle/', views.FavoriteToggleView.as_view(), name='user-favorite-toggle'),
 
     path("", views.UserAPIView.as_view(), name="user-info"),
