@@ -7,9 +7,9 @@ router = routers.DefaultRouter()
 router.register(r"categories", CategoryViewSet)
 router.register(r"^(?P<post_id>\d+)/comment", CommentViewSet)
 router.register(r'2', Post2APIView, basename='post')
-router.register(r'', PostAPIView, basename='post')
 
 urlpatterns = [
+    path('', PostAPIView.as_view(), name="post"),
     path('', include(router.urls)),
     path("like/<int:pk>/", LikePostAPIView.as_view(), name="like-post"),
 ]

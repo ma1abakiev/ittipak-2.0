@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  ittipak-server:
+  server:
     build:
       context: .
     container_name: ittipak
     restart: always
     command: >
-      sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+      sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/ittipak_server
     ports:
-      - "8000:8000"
+      - '8000:8000'
