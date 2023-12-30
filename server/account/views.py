@@ -85,9 +85,9 @@ class FavoriteToggleView(generics.UpdateAPIView):
         post_id = request.data.get('post_id')
         user = request.user
         post = get_object_or_404(Post, pk=post_id)
-        if post in user.posts.all():
-            user.posts.remove(post)
+        if post in user.favorite_posts.all():
+            user.favorite_posts.remove(post)
             return HttpResponse(status=200)
-        user.posts.add(post)
+        user.favorite_posts.add(post)
         return HttpResponse(status=200)
 

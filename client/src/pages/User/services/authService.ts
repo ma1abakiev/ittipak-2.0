@@ -1,6 +1,6 @@
-import $api from '../../../App/http/auth'
+import $api from '../../../shared/http/auth'
 
-export default class AuthService {
+export default class authService {
   static async login(email: string, password: string) {
     return $api.post('/login/', {
       email,

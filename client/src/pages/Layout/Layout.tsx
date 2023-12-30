@@ -1,5 +1,4 @@
-import Header from '../Header'
-import Footer from '../Footer'
+import Header from '../../widgets/Header/Header'
 import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
@@ -7,11 +6,8 @@ const Layout = () => {
     <>
       <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
     </>
   )
 }
-
-
 
 export default Layout

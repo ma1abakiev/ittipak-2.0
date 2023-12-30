@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 import { setUser } from './slices/authSlice'
-import AuthService from './services'
 import {
   Button,
   Container,
@@ -13,6 +12,7 @@ import {
 } from '@mui/material'
 import { Box } from '@mui/system'
 import { Link } from 'react-router-dom'
+import authService from './services/AuthService'
 
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +32,7 @@ const RegistrationPage = () => {
   }
   const handleRegistration = async () => {
     try {
-      const response = await AuthService.register(
+      const response = await authService.register(
         formData.username,
         formData.email,
         formData.password,

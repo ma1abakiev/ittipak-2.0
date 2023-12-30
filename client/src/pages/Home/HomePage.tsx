@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import axios from 'axios'
 import { useQuery } from 'react-query'
-import { Box } from '@mui/material'
-import NewsCards from '../../features/NewsCards'
-import Filter from '../../features/Filter'
+import { Grid } from '@mui/material'
+import Filter from '../../features/Filter/Filter'
+import NewsList from '../../widgets/NewsList/NewsList'
+import { Container } from '@mui/system'
 
 async function fetchCards(skip: number = 0) {
   const { data } = await axios.get(
@@ -12,7 +13,7 @@ async function fetchCards(skip: number = 0) {
   return data
 }
 
-const NewsSection = () => {
+const Home = () => {
   const [page, setPage] = useState(1)
   const { data, isError, isLoading } = useQuery(
     ['cards', page],
@@ -31,24 +32,18 @@ const NewsSection = () => {
   if (!data) {
     return <h3>Нету данных</h3>
   }
-
   return (
-    <section>
-      <div className="container">
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            mt: '50px',
-          }}
-        >
+    <Container maxWidth="xl">
+      <Grid container spacing={2}>
+        <Grid item xs={2}>
           <Filter></Filter>
-          <NewsCards setPage={setPage} page={page} data={data}></NewsCards>
-        </Box>
-      </div>
-    </section>
+        </Grid>
+        <Grid item xs={10}>
+          <NewsList setPage={setPage} page={page} data={data}></NewsList>
+        </Grid>
+      </Grid>
+    </Container>
   )
 }
 
-export default NewsSection
+export default Home
