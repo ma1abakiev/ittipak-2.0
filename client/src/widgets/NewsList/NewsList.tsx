@@ -16,11 +16,16 @@ const NewsList: React.FC<NewsCardProps> = ({ data, page, setPage }) => {
     event.preventDefault()
     setPage(value)
   }
-  const filterBySearchText = (card: CardType) =>
-    card.title?.toLowerCase().includes(searchText)
+  const filterBySearchText = (card: CardType) => {
+    if (!searchText) {
+      return true 
+    }
+
+    return card.title?.toLowerCase().includes(searchText.toLowerCase())
+  }
   return (
     <>
-      {data?.results
+      {data.results
         ?.slice((page - 1) * postsPerPage, page * postsPerPage)
         ?.filter(filterBySearchText)
         .map((card) => (

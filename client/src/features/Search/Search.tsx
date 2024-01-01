@@ -4,6 +4,32 @@ import SearchIcon from '@mui/icons-material/Search'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectSearchText, updateSearchText } from './store/searchSlice'
 
+const Search = () => {
+  const dispatch = useDispatch()
+  const searchText = useSelector(selectSearchText)
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(searchText)
+    console.log(e.target.value)
+    dispatch(updateSearchText(e.target.value))
+  }
+
+  return (
+    <CustomSearch>
+      <SearchIconWrapper>
+        <SearchIcon />
+      </SearchIconWrapper>
+      <StyledInputBase
+        placeholder="Search…"
+        inputProps={{ 'aria-label': 'search' }}
+        value={searchText}
+        onChange={handleSearch}
+      />
+    </CustomSearch>
+  )
+}
+
+export default Search
+
 const CustomSearch = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -43,27 +69,3 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }))
-
-const Search = () => {
-  const dispatch = useDispatch()
-  const searchText = useSelector(selectSearchText)
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(updateSearchText(e.target.value))
-  }
-
-  return (
-    <CustomSearch>
-      <SearchIconWrapper>
-        <SearchIcon />
-      </SearchIconWrapper>
-      <StyledInputBase
-        placeholder="Search…"
-        inputProps={{ 'aria-label': 'search' }}
-        value={searchText}
-        onChange={handleSearch}
-      />
-    </CustomSearch>
-  )
-}
-
-export default Search

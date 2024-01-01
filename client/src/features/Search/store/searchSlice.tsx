@@ -1,15 +1,11 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 interface SearchState {
-  search: {
-    searchText: string
-  }
+  searchText: string
 }
 
 const initialState: SearchState = {
-  search: {
-    searchText: '',
-  },
+  searchText: '',
 }
 
 const searchSlice = createSlice({
@@ -17,7 +13,7 @@ const searchSlice = createSlice({
   initialState,
   reducers: {
     updateSearchText: (state, action: PayloadAction<string>) => {
-      state.search.searchText = action.payload
+      state.searchText = action.payload
     },
   },
 })
