@@ -55,3 +55,22 @@ class UserLoginSerializer(serializers.Serializer):
         if user and user.is_active:
             return user
         raise serializers.ValidationError("Incorrect Credentials")
+
+
+# class FavoriteListSerializer(serializers.ModelSerializer):
+#     favorite_posts = PostSerializer(many=True, read_only=True)
+#
+#     class Meta:
+#         model = User
+#         fields = ('id', 'favorite_posts',)
+
+class FavoriteListSerializer(serializers.ModelSerializer):
+    favorite_posts = serializers.SerializerMethodField()
+
+    class Meta:
+        model = User
+        fields = ('id', 'favorite_posts',)
+
+    def get_favorite_posts(self, obj):
+        favorite_posts = obj.favorite_posts.all()
+        return PostSerializer(instance=favorite_posts, many=True, context=self.context).data

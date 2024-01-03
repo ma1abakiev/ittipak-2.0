@@ -1,16 +1,15 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from news.views import PostAPIView, Post2APIView, CategoryViewSet, CommentViewSet, LikePostAPIView
+from news import views
 
 router = routers.DefaultRouter()
-router.register(r"categories", CategoryViewSet)
-router.register(r"^(?P<post_id>\d+)/comment", CommentViewSet)
-router.register(r'2', Post2APIView, basename='post')
+router.register(r"categories", views.CategoryViewSet)
+router.register(r"^(?P<post_id>\d+)/comment", views.CommentViewSet)
+router.register(r'like', views.PostLikeViewSet, basename='post-like')
+router.register(r'2', views.Post2ViewSet, basename='post2')
+router.register(r'', views.PostViewSet, basename='post')
 
 urlpatterns = [
-    path('', PostAPIView.as_view(), name="post"),
     path('', include(router.urls)),
-    path("like/<int:pk>/", LikePostAPIView.as_view(), name="like-post"),
 ]
-

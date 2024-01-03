@@ -23,6 +23,11 @@ class Post(models.Model):
     categories = models.ManyToManyField(Category, blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
+    file = models.FileField(upload_to='post/files/')
+    is_active = models.BooleanField(
+        verbose_name="Видемость поста",
+        default=True,
+    )
 
     class Meta:
         ordering = ("-created",)

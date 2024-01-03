@@ -33,6 +33,7 @@ class PostSerializer(serializers.ModelSerializer):
     content = FixAbsolutePathSerializer()
     categories = serializers.SerializerMethodField(read_only=True)
     likes = serializers.SerializerMethodField(read_only=True)
+    photo = serializers.ImageField(max_length=None, use_url=True)
 
     class Meta:
         model = Post

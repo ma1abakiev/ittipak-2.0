@@ -5,7 +5,7 @@ from .models import Post, Category, Post2, Comment
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'updated', 'created')
+    list_display = ('id', 'title', 'updated', 'created', )
     list_display_links = ('id', 'title')
 
 
