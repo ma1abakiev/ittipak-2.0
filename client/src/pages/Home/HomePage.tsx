@@ -33,7 +33,7 @@ const Home = () => {
     return <h3>Нету данных</h3>
   }
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" sx={{ mt: 5}}>
       <Grid container spacing={2}>
         <Grid item xs={2}>
           <Filter></Filter>

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { AuthState } from '../../pages/User/type'
+import { AuthState } from '../../pages/User/types/type'
 
 export const API_URL = `http://localhost:8000/api/user/`
 
