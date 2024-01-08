@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
+import { setUser } from '../slices/authSlice'
 import {
   Button,
   Container,
@@ -10,29 +10,19 @@ import {
   TextField,
   Typography,
 } from '@mui/material'
-import { Link } from 'react-router-dom'
 import { Box } from '@mui/system'
-import { useDispatch } from 'react-redux'
-import { setUser } from './slices/authSlice'
-import authService from './services/authService'
-import { AuthState } from './type'
-import { RootState } from '@reduxjs/toolkit/dist/query'
+import { Link } from 'react-router-dom'
+import authService from '../services/authService'
 
-const LoginPage = () => {
+const RegistrationPage = () => {
   const [formData, setFormData] = useState({
+    username: '',
     email: '',
     password: '',
+    password_confirm: '',
   })
+
   const dispatch = useDispatch()
-  const navigate = useNavigate()
-
-  const user = useSelector((state: RootState) => state.auth.user)
-
-  useEffect(() => {
-    if (user && user.tokens) {
-      navigate('/home')
-    }
-  }, [user, navigate])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData((prevData) => ({
@@ -40,13 +30,15 @@ const LoginPage = () => {
       [e.target.name]: e.target.value,
     }))
   }
-
-  const handleLogin = async () => {
+  const handleRegistration = async () => {
     try {
-      const response = await authService.login(
+      const response = await authService.register(
+        formData.username,
         formData.email,
-        formData.password
+        formData.password,
+        formData.password_confirm
       )
+
       dispatch(
         setUser({
           id: response.data.id,
@@ -56,11 +48,10 @@ const LoginPage = () => {
         })
       )
 
-      toast.success('Вы успешно вошли')
-      navigate('/home') // Перенаправляем пользователя после успешного входа
+      toast.success('Вы успешно зарегистрировались!')
     } catch (e) {
-      console.log(`Ошибка: ${e}`)
-      toast.error('Произошла ошибка')
+      toast.error('Ошибка при регистрации. Пожалуйста, проверьте данные.')
+      console.log(e)
     }
   }
 
@@ -68,9 +59,19 @@ const LoginPage = () => {
     <Container sx={{ mt: 10 }} component="main" maxWidth="xs">
       <Paper elevation={3} sx={{ p: 3 }}>
         <Typography component="h1" variant="h5">
-          Вход
+          Регистрация
         </Typography>
         <Grid sx={{ mt: 2 }} container spacing={2}>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Username"
+              name="username"
+              onChange={handleChange}
+              value={formData.username}
+              required
+            />
+          </Grid>
           <Grid item xs={12}>
             <TextField
               fullWidth
@@ -81,7 +82,6 @@ const LoginPage = () => {
               required
             />
           </Grid>
-
           <Grid item xs={12}>
             <TextField
               fullWidth
@@ -91,7 +91,17 @@ const LoginPage = () => {
               onChange={handleChange}
               value={formData.password}
               required
-              // tabIndex={3}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Password repeat"
+              name="password_confirm"
+              type="password"
+              onChange={handleChange}
+              value={formData.password_confirm}
+              required
             />
           </Grid>
         </Grid>
@@ -99,14 +109,14 @@ const LoginPage = () => {
           fullWidth
           variant="contained"
           color="primary"
-          onClick={handleLogin}
+          onClick={handleRegistration}
           sx={{ mt: 3, p: 2 }}
         >
-          Войти
+          Зарегистрироваться
         </Button>
         <Box sx={{ display: 'flex', justifyContent: 'center', mt: 1 }}>
-          <Link style={{ color: 'primary' }} to={'/registration'}>
-            Нет Аккаунта?
+          <Link style={{ color: 'blue' }} to={'/login'}>
+            Уже есть Аккаунт?
           </Link>
         </Box>
       </Paper>
@@ -114,4 +124,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default RegistrationPage

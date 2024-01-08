@@ -1,6 +1,6 @@
 import React from 'react'
 import Pagination from '@mui/material/Pagination'
-import { Box } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import NewsCard from '../../entities/NewsCard/NewsCard'
 import { CardType, NewsCardProps } from '../../entities/NewsCard/type'
 import { useSelector } from 'react-redux'
@@ -18,24 +18,24 @@ const NewsList: React.FC<NewsCardProps> = ({ data, page, setPage }) => {
   }
   const filterBySearchText = (card: CardType) => {
     if (!searchText) {
-      return true 
+      return true
     }
 
     return card.title?.toLowerCase().includes(searchText.toLowerCase())
   }
   return (
     <>
-      {data.results
-        ?.slice((page - 1) * postsPerPage, page * postsPerPage)
-        ?.filter(filterBySearchText)
-        .map((card) => (
-          <div key={card.id}>
-            <NewsCard {...card} />
-            {card.id % 10 !== 0 && (
+      <Grid container spacing={5}>
+        {data.results
+          ?.slice((page - 1) * postsPerPage, page * postsPerPage)
+          ?.filter(filterBySearchText)
+          .map((card) => (
+            <Grid item xs={4} key={card.id}>
+              <NewsCard {...card} />
               <hr style={{ maxWidth: '845px', margin: '16px 0' }} />
-            )}
-          </div>
-        ))}
+            </Grid>
+          ))}
+      </Grid>
       <Box mt="20px">
         {totalPages > 1 && (
           <Pagination

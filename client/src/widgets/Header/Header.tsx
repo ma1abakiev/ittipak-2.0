@@ -12,7 +12,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode'
 import LightModeIcon from '@mui/icons-material/LightMode'
 import { ColorModeContext } from '../../App/theme'
 import { Button, Checkbox } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { logout } from '../../pages/User/slices/authSlice'
 import { toast } from 'react-toastify'
 import { useDispatch } from 'react-redux'
@@ -21,7 +21,21 @@ import Search from '../../features/Search/Search'
 export default function Header() {
   const { toggleColorMode } = useContext(ColorModeContext)
   const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const isTokenPresent = () => {
+    return localStorage.getItem('token') !== null
+  }
+  const token = isTokenPresent()
 
+  const handleUserNavigate = () => {
+    if (token) {
+      navigate('/user')
+    } else {
+      navigate('/login')
+    }
+  }
+
+  // MUI Function
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null)
@@ -71,9 +85,7 @@ export default function Header() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>
-        <Link style={{ color: 'black', textDecoration: 'none' }} to={'/login'}>
-          My account
-        </Link>
+        <Typography onClick={handleUserNavigate}>My account</Typography>
       </MenuItem>
       <MenuItem onClick={handleExit}>Exit</MenuItem>
     </Menu>
@@ -139,9 +151,9 @@ export default function Header() {
             <Link style={{ textDecoration: 'none' }} to={'/favorites'}>
               <Button color="secondary">Favorites</Button>{' '}
             </Link>
-            <Link to={'/login'}>
-              <Button color="secondary">User</Button>{' '}
-            </Link>
+            <Button onClick={handleUserNavigate} color="secondary">
+              User
+            </Button>{' '}
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Checkbox

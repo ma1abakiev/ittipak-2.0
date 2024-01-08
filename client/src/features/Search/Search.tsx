@@ -8,8 +8,6 @@ const Search = () => {
   const dispatch = useDispatch()
   const searchText = useSelector(selectSearchText)
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(searchText)
-    console.log(e.target.value)
     dispatch(updateSearchText(e.target.value))
   }
 
