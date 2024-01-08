@@ -90,7 +90,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 @extend_schema(tags=['Likes'])
 @extend_schema_view(
-    get=extend_schema(
+    retrieve=extend_schema(
         summary='Лайк поста',
         description='При запросе лайк добавляется к посту по id, повторный запрос удаляет лайк'
     ),
