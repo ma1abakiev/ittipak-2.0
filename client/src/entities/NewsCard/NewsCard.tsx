@@ -21,7 +21,7 @@ import {
 import { red } from '@mui/material/colors'
 import { CardType } from './type'
 import { Link } from 'react-router-dom'
-import $api from '../../../../App/http/auth'
+import $api from '../../shared/http/auth'
 
 export default function NewsCard({
   title,
@@ -37,7 +37,7 @@ export default function NewsCard({
   }
 
   return (
-    <Card sx={{ maxWidth: 845 }}>
+    <Card>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

@@ -1,14 +1,11 @@
 import React, { useContext } from 'react'
-import { styled, alpha } from '@mui/material/styles'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
-import InputBase from '@mui/material/InputBase'
 import MenuItem from '@mui/material/MenuItem'
 import Menu from '@mui/material/Menu'
-import SearchIcon from '@mui/icons-material/Search'
 import AccountCircle from '@mui/icons-material/AccountCircle'
 import MoreIcon from '@mui/icons-material/MoreVert'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
@@ -19,46 +16,7 @@ import { Link } from 'react-router-dom'
 import { logout } from '../../pages/User/slices/authSlice'
 import { toast } from 'react-toastify'
 import { useDispatch } from 'react-redux'
-
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
-  },
-}))
-
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}))
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
-  '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
-}))
+import Search from '../../features/Search/Search'
 
 export default function Header() {
   const { toggleColorMode } = useContext(ColorModeContext)
@@ -172,25 +130,17 @@ export default function Header() {
           >
             Ittipak
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+          <Search></Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box>
             <Link to={'/home'}>
               <Button color="secondary">Home</Button>
             </Link>
-            <Link to={'/favorites'}>
+            <Link style={{ textDecoration: 'none' }} to={'/favorites'}>
               <Button color="secondary">Favorites</Button>{' '}
             </Link>
             <Link to={'/login'}>
-              <Button color="secondary">Favorites</Button>{' '}
+              <Button color="secondary">User</Button>{' '}
             </Link>
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

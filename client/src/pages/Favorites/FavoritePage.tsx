@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { CardType } from '../../features/NewsCards/components/NewsCard/type'
-import $api from '../../App/http/auth'
-import NewsCard from '../../features/NewsCards/components/NewsCard'
+import $api from '../../shared/http/auth'
 import { Grid } from '@mui/material'
 import { Container } from '@mui/system'
+import NewsCard from '../../entities/NewsCard/NewsCard'
+import { CardType } from '../../entities/NewsCard/type'
 
 const FavoritesPage = () => {
   const [favoriteCards, setFavoriteCards] = useState([])
@@ -11,17 +11,14 @@ const FavoritesPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await $api.get(
-          'http://localhost:8000/api/user/favorite/'
-        )
-        setFavoriteCards(response.data)
+        const response = await $api.get('http://localhost:8000/api/user/')
+        setFavoriteCards(response.data.favorite_posts)
       } catch (error) {
         console.error('Ошибка при загрузке избранных карт:', error)
       }
     }
 
     fetchData()
-    console.log('OK')
   }, [])
   return (
     <>

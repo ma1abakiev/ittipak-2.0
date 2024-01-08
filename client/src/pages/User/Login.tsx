@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import AuthService from './services'
 import {
   Button,
   Container,
@@ -13,6 +14,9 @@ import { Link } from 'react-router-dom'
 import { Box } from '@mui/system'
 import { useDispatch } from 'react-redux'
 import { setUser } from './slices/authSlice'
+import authService from './services/authService'
+import { AuthState } from './type'
+import { RootState } from '@reduxjs/toolkit/dist/query'
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -20,6 +24,15 @@ const LoginPage = () => {
     password: '',
   })
   const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const user = useSelector((state: RootState) => state.auth.user)
+
+  useEffect(() => {
+    if (user && user.tokens) {
+      navigate('/home')
+    }
+  }, [user, navigate])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData((prevData) => ({
@@ -30,7 +43,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await AuthService.login(
+      const response = await authService.login(
         formData.email,
         formData.password
       )
@@ -43,10 +56,11 @@ const LoginPage = () => {
         })
       )
 
-      toast.success('Вы успешно Вошли')
+      toast.success('Вы успешно вошли')
+      navigate('/home') // Перенаправляем пользователя после успешного входа
     } catch (e) {
-      console.log(`Ошибка Ошибка Ошибка ${e}`)
-      toast.error('ошибочка')
+      console.log(`Ошибка: ${e}`)
+      toast.error('Произошла ошибка')
     }
   }
 
