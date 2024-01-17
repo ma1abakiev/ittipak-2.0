@@ -33,6 +33,7 @@ class PostSerializer(serializers.ModelSerializer):
     content = FixAbsolutePathSerializer()
     categories = serializers.SerializerMethodField(read_only=True)
     likes = serializers.SerializerMethodField(read_only=True)
+    total_likes = serializers.SerializerMethodField(read_only=True)
     photo = serializers.ImageField(max_length=None, use_url=True)
 
     class Meta:
@@ -50,6 +51,10 @@ class PostSerializer(serializers.ModelSerializer):
             like.username for like in obj.likes.get_queryset().only("username")
         )
         return likes
+
+    def get_total_likes(self, obj):
+        total_likes = obj.likes.count()
+        return total_likes
 
 
 class CommentReadSerializer(serializers.ModelSerializer):
