@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from drf_spectacular.utils import extend_schema_view, extend_schema
-from rest_framework import permissions, viewsets, status, generics
+from rest_framework import permissions, viewsets, status
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
@@ -59,6 +59,27 @@ class PostViewSet(viewsets.ReadOnlyModelViewSet):
 
 
 @extend_schema(tags=['Comments'])
+@extend_schema_view(
+    create=extend_schema(
+        summary='Создание комментария для поста',
+        description=''
+    ),
+    list=extend_schema(
+        summary='Получение комментариев для поста'
+    ),
+    retrieve=extend_schema(
+        'Получение существующего поста'
+    ),
+    partial_update=extend_schema(
+        summary='Частичное обновление существующего поста'
+    ),
+    update=extend_schema(
+        summary='Обновление существующего поста'
+    ),
+    destroy=extend_schema(
+        summary='Удаление поста'
+    )
+)
 class CommentViewSet(viewsets.ModelViewSet):
     """
     CRUD comments for a particular post
@@ -74,7 +95,6 @@ class CommentViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         if self.action in ("create", "update", "partial_update", "destroy"):
             return CommentWriteSerializer
-
         return CommentReadSerializer
 
     def get_permissions(self):
