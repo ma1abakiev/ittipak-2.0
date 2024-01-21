@@ -5,8 +5,11 @@ from .models import Post, Category, Post2, Comment
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'updated', 'created', )
+    list_display = ('id', 'title', 'updated', 'created', 'is_active')
     list_display_links = ('id', 'title')
+    list_filter = ('is_active',)
+    search_fields = ('title', 'subtitle')
+    list_editable = ('is_active',)
 
 
 @admin.register(Post2)

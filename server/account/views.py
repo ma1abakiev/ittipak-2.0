@@ -105,7 +105,7 @@ class UserAPIView(RetrieveUpdateAPIView):
             ],
     )
 )
-class UserFavoritePostsViewSet(viewsets.ViewSet):
+class UserFavoritePostsAPIView(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = serializers.FavoriteListSerializer
 

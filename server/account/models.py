@@ -37,6 +37,7 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     email = models.EmailField(_("email address"), unique=True)
     favorite_posts = models.ManyToManyField(Post)
+    photo = models.ImageField(upload_to='user_photos/')
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
