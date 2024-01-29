@@ -75,7 +75,6 @@ export default function NewsCard({
     fetchData()
     fetchUser()
   }, [])
-  console.log(user)
   return (
     <Card>
       <CardHeader

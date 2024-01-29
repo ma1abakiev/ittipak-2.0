@@ -18,33 +18,14 @@ import {
   Comment,
   Favorite,
 } from '@mui/icons-material'
-import { useQuery } from 'react-query'
 import $api from '../../shared/http/auth'
 
 const NewsDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
-  async function fetchCards() {
-    const { data } = await axios.get(`http://localhost:8000/api/post/${id}`)
-    return data
-  }
-
-  const { data, isError, isLoading } = useQuery(['cards'], () => fetchCards(), {
-    keepPreviousData: true,
-  })
-
-  if (isLoading) {
-    return <h3>Идёт загрузка</h3>
-  }
-  if (isError) {
-    return <h3>Error</h3>
-  }
-  if (!data) {
-    return <h3>Нету данных</h3>
-  }
-
   const [favoriteData, setFavoriteData] = useState([])
+  const [data, setData] = useState()
 
-  const fetchData = async () => {
+  const fetchFavoriteData = async () => {
     try {
       const response = await $api.get('http://localhost:8000/api/user/favorite')
       const idsArray = response.data.favorite_posts.map((card) => card.id)
@@ -53,24 +34,34 @@ const NewsDetailsPage: React.FC = () => {
       console.log(error)
     }
   }
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8000/api/post/${id}`)
+      setData(response.data)
+    } catch (e) {
+      console.error(e)
+    }
+  }
 
   useEffect(() => {
     fetchData()
+    fetchFavoriteData()
   }, [])
-
+  console.log(data)
   const toggleFavorite = async () => {
     try {
       await $api.post('http://localhost:8000/api/user/favorite/', {
         post_id: id,
       })
-
-      // После успешного обновления отправляем новый запрос для получения актуальных данных
-      fetchData()
+      fetchFavoriteData()
     } catch (error) {
       console.log(error)
     }
   }
 
+  if (!data) {
+    return <div>Загрузка</div>
+  }
   return (
     <Container maxWidth="sm">
       <Card>
@@ -109,13 +100,13 @@ const NewsDetailsPage: React.FC = () => {
           <IconButton>
             <Comment />
           </IconButton>
+          <Checkbox
+            icon={<BookmarkAdd />}
+            checkedIcon={<BookmarkRemove />}
+            checked={favoriteData.includes(id)}
+            onChange={toggleFavorite}
+          />
         </CardActions>
-        <Checkbox
-          icon={<BookmarkAdd />}
-          checkedIcon={<BookmarkRemove />}
-          checked={favoriteData.includes(id)}
-          onChange={toggleFavorite}
-        />
       </Card>
     </Container>
   )
