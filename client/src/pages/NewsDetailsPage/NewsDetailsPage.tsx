@@ -1,5 +1,5 @@
 // features/news/components/NewsDetailsPage.jsx
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Typography,
   Card,
@@ -12,29 +12,65 @@ import {
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { Box, Container } from '@mui/system'
-import { Comment, Favorite } from '@mui/icons-material'
-import { CardType } from '../../entities/NewsCard/type'
+import {
+  BookmarkAdd,
+  BookmarkRemove,
+  Comment,
+  Favorite,
+} from '@mui/icons-material'
+import { useQuery } from 'react-query'
+import $api from '../../shared/http/auth'
 
 const NewsDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
-  const [newsData, setNewsData] = useState<CardType>()
+  async function fetchCards() {
+    const { data } = await axios.get(`http://localhost:8000/api/post/${id}`)
+    return data
+  }
+
+  const { data, isError, isLoading } = useQuery(['cards'], () => fetchCards(), {
+    keepPreviousData: true,
+  })
+
+  if (isLoading) {
+    return <h3>Идёт загрузка</h3>
+  }
+  if (isError) {
+    return <h3>Error</h3>
+  }
+  if (!data) {
+    return <h3>Нету данных</h3>
+  }
+
+  const [favoriteData, setFavoriteData] = useState([])
+
+  const fetchData = async () => {
+    try {
+      const response = await $api.get('http://localhost:8000/api/user/favorite')
+      const idsArray = response.data.favorite_posts.map((card) => card.id)
+      setFavoriteData(idsArray)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   useEffect(() => {
-    const fetchNewsById = async () => {
-      try {
-        const response = await axios.get(`http://localhost:8000/api/post/${id}`)
-        setNewsData(response.data)
-      } catch (error) {
-        console.error('Error fetching news by id:', error)
-      }
+    fetchData()
+  }, [])
+
+  const toggleFavorite = async () => {
+    try {
+      await $api.post('http://localhost:8000/api/user/favorite/', {
+        post_id: id,
+      })
+
+      // После успешного обновления отправляем новый запрос для получения актуальных данных
+      fetchData()
+    } catch (error) {
+      console.log(error)
     }
-
-    fetchNewsById()
-  }, [id])
-
-  if (!newsData) {
-    return <div>Loading...</div>
   }
+
   return (
     <Container maxWidth="sm">
       <Card>
@@ -42,7 +78,7 @@ const NewsDetailsPage: React.FC = () => {
           <CardMedia
             component="img"
             alt="green iguana"
-            image={newsData.photo}
+            image={data.photo}
             sx={{
               width: 800,
               height: 'auto',
@@ -57,11 +93,11 @@ const NewsDetailsPage: React.FC = () => {
               component="h2"
               sx={{ textAlign: 'center' }}
             >
-              {newsData.title}
+              {data.title}
             </Typography>
           </Box>
           <div
-            dangerouslySetInnerHTML={{ __html: newsData.content }}
+            dangerouslySetInnerHTML={{ __html: data.content }}
             color="text.secondary"
           ></div>
         </CardContent>
@@ -74,6 +110,12 @@ const NewsDetailsPage: React.FC = () => {
             <Comment />
           </IconButton>
         </CardActions>
+        <Checkbox
+          icon={<BookmarkAdd />}
+          checkedIcon={<BookmarkRemove />}
+          checked={favoriteData.includes(id)}
+          onChange={toggleFavorite}
+        />
       </Card>
     </Container>
   )

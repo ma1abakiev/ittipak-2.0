@@ -15,7 +15,6 @@ import { Box } from '@mui/system'
 import { useDispatch } from 'react-redux'
 import { setUser } from '../slices/authSlice'
 import authService from '../services/authService'
-import { AuthState } from '../types/type'
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +24,7 @@ const LoginPage = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  const user = useSelector((state) => state.auth.user)
+  const user = useSelector((state: RootState) => state.auth.user)
 
   useEffect(() => {
     if (user && user.tokens) {

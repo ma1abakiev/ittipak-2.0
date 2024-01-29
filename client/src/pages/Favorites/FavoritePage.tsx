@@ -1,36 +1,59 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import $api from '../../shared/http/auth'
-import { Grid } from '@mui/material'
 import { Container } from '@mui/system'
-import NewsCard from '../../entities/NewsCard/NewsCard'
-import { CardType } from '../../entities/NewsCard/type'
+import NewsList from '../../entities/News/ui/NewsList/NewsList'
+import { useQuery } from 'react-query'
+import { Grid, Typography } from '@mui/material'
+import Filter from '../../features/Filter/Filter'
+
+async function fetchCards(skip: number = 0) {
+  const { data } = await $api.get(
+    `http://localhost:8000/api/user/favorite?skip=${skip}limit=10`
+  )
+  return data
+}
 
 const FavoritesPage = () => {
-  const [favoriteCards, setFavoriteCards] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await $api.get('http://localhost:8000/api/user/')
-        setFavoriteCards(response.data.favorite_posts)
-      } catch (error) {
-        console.error('Ошибка при загрузке избранных карт:', error)
-      }
+  const [page, setPage] = useState(1)
+  const { data, isError, isLoading } = useQuery(
+    ['cards', page],
+    () => fetchCards(page),
+    {
+      keepPreviousData: true,
     }
+  )
 
-    fetchData()
-  }, [])
+  if (isLoading) {
+    return <h3>Идёт загрузка</h3>
+  }
+  if (isError) {
+    return <h3>Error</h3>
+  }
+  if (!data) {
+    return <h3>Нету данных</h3>
+  }
+
   return (
     <>
-      <Container>
-        <Grid mt={5} container spacing={2} gap={3} justifyContent={'center'}>
-          {favoriteCards.map((item: CardType) => {
-            return (
-              <Grid item xs={5}>
-                <NewsCard key={item.id} {...item}></NewsCard>
-              </Grid>
-            )
-          })}
+      <Container maxWidth="xl" sx={{ mt: 2 }}>
+        <Typography
+          sx={{ textAlign: 'center', mb: 4 }}
+          variant="h2"
+          component={'h2'}
+        >
+          Избранные
+        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={2}>
+            <Filter></Filter>
+          </Grid>
+          <Grid item xs={10}>
+            <NewsList
+              setPage={setPage}
+              page={page}
+              data={data.favorite_posts}
+            ></NewsList>
+          </Grid>
         </Grid>
       </Container>
     </>

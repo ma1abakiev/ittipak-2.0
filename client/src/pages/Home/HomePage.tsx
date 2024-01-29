@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useQuery } from 'react-query'
 import { Grid } from '@mui/material'
 import Filter from '../../features/Filter/Filter'
-import NewsList from '../../widgets/NewsList/NewsList'
+import NewsList from '../../entities/News/ui/NewsList/NewsList'
 import { Container } from '@mui/system'
 
 async function fetchCards(skip: number = 0) {
@@ -33,13 +33,17 @@ const Home = () => {
     return <h3>Нету данных</h3>
   }
   return (
-    <Container maxWidth="xl" sx={{ mt: 5}}>
+    <Container maxWidth="xl" sx={{ mt: 5 }}>
       <Grid container spacing={2}>
         <Grid item xs={2}>
           <Filter></Filter>
         </Grid>
         <Grid item xs={10}>
-          <NewsList setPage={setPage} page={page} data={data}></NewsList>
+          <NewsList
+            setPage={setPage}
+            page={page}
+            data={data.results}
+          ></NewsList>
         </Grid>
       </Grid>
     </Container>

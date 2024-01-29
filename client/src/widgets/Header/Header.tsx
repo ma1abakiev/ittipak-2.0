@@ -23,7 +23,7 @@ export default function Header() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const isTokenPresent = () => {
-    return localStorage.getItem('token') !== null
+    return localStorage.getItem('token') != null
   }
   const token = isTokenPresent()
 
@@ -32,6 +32,15 @@ export default function Header() {
       navigate('/user')
     } else {
       navigate('/login')
+    }
+  }
+  const handleExit = async () => {
+    try {
+      dispatch(logout())
+      navigate('/home')
+      toast.success('Выход')
+    } catch (e) {
+      toast.error('Выйти не удалось')
     }
   }
 
@@ -59,14 +68,7 @@ export default function Header() {
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget)
   }
-  const handleExit = async () => {
-    try {
-      dispatch(logout())
-      toast.success('Выход')
-    } catch (e) {
-      toast.error('Выйти не удалось')
-    }
-  }
+
   const menuId = 'primary-search-account-menu'
   const renderMenu = (
     <Menu

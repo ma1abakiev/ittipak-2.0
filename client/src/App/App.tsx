@@ -10,9 +10,10 @@ import { Provider } from 'react-redux'
 import store from './store/store'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import LoginPage from '../pages/User/Login'
-import RegistrationPage from '../pages/User/Registration'
 import NewsDetailsPage from '../pages/NewsDetailsPage/NewsDetailsPage'
+import LoginPage from '../pages/User/components/Login'
+import RegistrationPage from '../pages/User/components/Registration'
+import UserPage from '../pages/User/UserPage'
 
 const queryClient = new QueryClient()
 
@@ -37,6 +38,7 @@ const App = () => {
                     path="/registration"
                     element={<RegistrationPage />}
                   ></Route>
+                  <Route path="/user" element={<UserPage></UserPage>}></Route>
                 </Route>
               </Routes>
             </BrowserRouter>
