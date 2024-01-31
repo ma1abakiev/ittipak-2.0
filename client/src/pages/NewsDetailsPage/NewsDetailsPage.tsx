@@ -17,14 +17,23 @@ import {
   BookmarkRemove,
   Comment,
   Favorite,
+  Share,
 } from '@mui/icons-material'
 import $api from '../../shared/http/auth'
 
 const NewsDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
-  const [favoriteData, setFavoriteData] = useState([])
   const [data, setData] = useState()
+  const [favoriteData, setFavoriteData] = useState([])
 
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8000/api/post/${id}`)
+      setData(response.data)
+    } catch (e) {
+      console.error(e)
+    }
+  }
   const fetchFavoriteData = async () => {
     try {
       const response = await $api.get('http://localhost:8000/api/user/favorite')
@@ -34,20 +43,14 @@ const NewsDetailsPage: React.FC = () => {
       console.log(error)
     }
   }
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(`http://localhost:8000/api/post/${id}`)
-      setData(response.data)
-    } catch (e) {
-      console.error(e)
-    }
-  }
 
   useEffect(() => {
-    fetchData()
     fetchFavoriteData()
+    fetchData()
   }, [])
-  console.log(data)
+  const addLike = () => {
+    $api.get(`http://localhost:8000/api/post/like/${id}`)
+  }
   const toggleFavorite = async () => {
     try {
       await $api.post('http://localhost:8000/api/user/favorite/', {
@@ -62,6 +65,7 @@ const NewsDetailsPage: React.FC = () => {
   if (!data) {
     return <div>Загрузка</div>
   }
+  console.log(favoriteData)
   return (
     <Container maxWidth="sm">
       <Card>
@@ -92,14 +96,37 @@ const NewsDetailsPage: React.FC = () => {
             color="text.secondary"
           ></div>
         </CardContent>
-        <CardActions sx={{ pt: 10 }}>
-          <Checkbox
-            icon={<Favorite />}
-            checkedIcon={<Favorite color="primary" />}
-          ></Checkbox>
-          <IconButton>
-            <Comment />
-          </IconButton>
+        <CardActions
+          disableSpacing
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+          }}
+        >
+          <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <Checkbox
+                onClick={addLike}
+                // checked={likes.includes()}
+                icon={<Favorite />}
+                checkedIcon={<Favorite color="primary" />}
+              ></Checkbox>
+              <Typography>{data.total_likes}</Typography>
+            </Box>
+            <IconButton>
+              <Comment />
+            </IconButton>
+            <IconButton aria-label="share">
+              <Share />
+            </IconButton>
+          </Box>
           <Checkbox
             icon={<BookmarkAdd />}
             checkedIcon={<BookmarkRemove />}

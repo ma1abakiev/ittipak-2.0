@@ -35,7 +35,7 @@ export default function NewsCard({
   file,
 }: CardType) {
   const [favoriteData, setFavoriteData] = useState([])
-  const [user, setUser] = useState()
+  // const [user, setUser] = useState()
 
   const fetchData = async () => {
     try {
@@ -46,14 +46,14 @@ export default function NewsCard({
       console.log(error)
     }
   }
-  const fetchUser = async () => {
-    try {
-      const response = await $api.get('http://localhost:8000/api/user/')
-      setUser(response)
-    } catch (e) {
-      console.error(e)
-    }
-  }
+  // const fetchUser = async () => {
+  //   try {
+  //     const response = await $api.get('http://localhost:8000/api/user/')
+  //     setUser(response)
+  //   } catch (e) {
+  //     console.error(e)
+  //   }
+  // }
   const toggleFavorite = async () => {
     try {
       await $api.post('http://localhost:8000/api/user/favorite/', {
@@ -73,7 +73,7 @@ export default function NewsCard({
 
   useEffect(() => {
     fetchData()
-    fetchUser()
+    // fetchUser()
   }, [])
   return (
     <Card>
