@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { useQuery, useMutation, useQueryClient } from 'react-query'
 import $api from '../../../../shared/http/auth'
 import { CardType } from '../../types/type'
