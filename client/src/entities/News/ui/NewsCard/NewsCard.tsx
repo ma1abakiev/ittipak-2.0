@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { useQuery, useMutation, useQueryClient } from 'react-query'
 import $api from '../../../../shared/http/auth'
 import { CardType } from '../../types/type'
 import { Link } from 'react-router-dom'
@@ -24,6 +25,26 @@ import {
   BookmarkRemove,
 } from '@mui/icons-material'
 
+const fetchFavoriteData = async () => {
+  const response = await $api.get('http://localhost:8000/api/user/favorite')
+  return response.data.favorite_posts.map((card: any) => card.id)
+}
+
+const addLikeMutation = async (postId: number) => {
+  await $api.get(`http://localhost:8000/api/post/like/${postId}`)
+}
+
+const toggleFavoriteMutation = async (postId: number) => {
+  await $api.post('http://localhost:8000/api/user/favorite/', {
+    post_id: postId,
+  })
+}
+
+const fetchUserData = async () => {
+  const response = await $api.get(`http://localhost:8000/api/user`)
+  return response.data
+}
+
 export default function NewsCard({
   title,
   photo,
@@ -32,49 +53,46 @@ export default function NewsCard({
   id,
   total_likes,
   likes,
-  file,
 }: CardType) {
-  const [favoriteData, setFavoriteData] = useState([])
-  // const [user, setUser] = useState()
+  const queryClient = useQueryClient()
 
-  const fetchData = async () => {
-    try {
-      const response = await $api.get('http://localhost:8000/api/user/favorite')
-      const idsArray = response.data.favorite_posts.map((card) => card.id)
-      setFavoriteData(idsArray)
-    } catch (error) {
-      console.log(error)
+  const { data: favoriteData, refetch: refetchFavoriteData } = useQuery(
+    'favoriteData',
+    fetchFavoriteData,
+    {
+      enabled: false, // Отключаем автоматическую загрузку данных при монтировании компонента
+      refetchOnMount: false, // Также отключаем автоматическую перезагрузку данных при монтировании
     }
-  }
-  // const fetchUser = async () => {
-  //   try {
-  //     const response = await $api.get('http://localhost:8000/api/user/')
-  //     setUser(response)
-  //   } catch (e) {
-  //     console.error(e)
-  //   }
-  // }
-  const toggleFavorite = async () => {
-    try {
-      await $api.post('http://localhost:8000/api/user/favorite/', {
-        post_id: id,
-      })
+  )
+  const { data: userData, refetch: userRefetch } = useQuery(
+    'userData',
+    fetchUserData
+  )
 
-      // После успешного обновления отправляем новый запрос для получения актуальных данных
-      fetchData()
-    } catch (error) {
-      console.log(error)
+  const addLikeMutationInstance = useMutation(
+    (postId: number) => addLikeMutation(postId),
+    {
+      onSuccess: async () => {
+        await userRefetch()
+        await refetchFavoriteData()
+        // userRefetch()
+        // refetchFavoriteData()
+        // queryClient.invalidateQueries('favoriteData')
+        // // Добавляем следующую строку для вызова refetch для favoriteData
+        // queryClient.refetchQueries('favoriteData')
+      },
     }
-  }
+  )
 
-  const addLike = () => {
-    $api.get(`http://localhost:8000/api/post/like/${id}`)
-  }
+  const toggleFavoriteMutationInstance = useMutation(
+    (postId: number) => toggleFavoriteMutation(postId),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries('favoriteData')
+      },
+    }
+  )
 
-  useEffect(() => {
-    fetchData()
-    // fetchUser()
-  }, [])
   return (
     <Card>
       <CardHeader
@@ -122,11 +140,15 @@ export default function NewsCard({
             }}
           >
             <Checkbox
-              onClick={addLike}
-              // checked={likes.includes()}
+              onClick={() => addLikeMutationInstance.mutate(id)}
               icon={<Favorite />}
               checkedIcon={<Favorite color="primary" />}
-            ></Checkbox>
+              checked={
+                userData && userData.username
+                  ? likes.includes(userData.username)
+                  : false
+              }
+            />
             <Typography>{total_likes}</Typography>
           </Box>
           <IconButton>
@@ -139,8 +161,8 @@ export default function NewsCard({
         <Checkbox
           icon={<BookmarkAdd />}
           checkedIcon={<BookmarkRemove />}
-          checked={favoriteData.includes(id)}
-          onChange={toggleFavorite}
+          checked={favoriteData?.includes(id)}
+          onChange={() => toggleFavoriteMutationInstance.mutate(id)}
         />
       </CardActions>
     </Card>

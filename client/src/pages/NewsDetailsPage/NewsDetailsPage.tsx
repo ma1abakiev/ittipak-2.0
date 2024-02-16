@@ -1,16 +1,14 @@
-// features/news/components/NewsDetailsPage.jsx
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {
   Typography,
   Card,
   CardMedia,
   CardContent,
   CardActions,
-  Checkbox,
   IconButton,
+  Checkbox,
 } from '@mui/material'
 import { useParams } from 'react-router-dom'
-import axios from 'axios'
 import { Box, Container } from '@mui/system'
 import {
   BookmarkAdd,
@@ -19,53 +17,74 @@ import {
   Favorite,
   Share,
 } from '@mui/icons-material'
+import { useQuery, useMutation } from 'react-query'
+import axios from 'axios'
 import $api from '../../shared/http/auth'
+
+const fetchData = async (id) => {
+  const response = await axios.get(`http://localhost:8000/api/post/${id}`)
+  return response.data
+}
+
+const fetchFavoriteData = async () => {
+  const response = await $api.get('http://localhost:8000/api/user/favorite')
+  const idsArray = response.data.favorite_posts.map((card) => card.id)
+  return idsArray
+}
+
+const addLike = async (id) => {
+  await $api.get(`http://localhost:8000/api/post/like/${id}`)
+}
+
+const toggleFavorite = async (id) => {
+  await $api.post('http://localhost:8000/api/user/favorite/', {
+    post_id: id,
+  })
+}
+
+const fetchUserData = async () => {
+  const response = await $api.get(`http://localhost:8000/api/user`)
+  return response.data
+}
 
 const NewsDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>()
-  const [data, setData] = useState()
-  const [favoriteData, setFavoriteData] = useState([])
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(`http://localhost:8000/api/post/${id}`)
-      setData(response.data)
-    } catch (e) {
-      console.error(e)
-    }
-  }
-  const fetchFavoriteData = async () => {
-    try {
-      const response = await $api.get('http://localhost:8000/api/user/favorite')
-      const idsArray = response.data.favorite_posts.map((card) => card.id)
-      setFavoriteData(idsArray)
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  const {
+    data: newsData,
+    isLoading: newsLoading,
+    refetch: newsRefetch,
+  } = useQuery(['news', id], () => fetchData(id))
+  const {
+    data: favoriteData,
+    isLoading: favoriteLoading,
+    refetch: refetchFavorite,
+  } = useQuery('favoriteData', fetchFavoriteData)
 
-  useEffect(() => {
-    fetchFavoriteData()
-    fetchData()
-  }, [])
-  const addLike = () => {
-    $api.get(`http://localhost:8000/api/post/like/${id}`)
-  }
-  const toggleFavorite = async () => {
-    try {
-      await $api.post('http://localhost:8000/api/user/favorite/', {
-        post_id: id,
-      })
-      fetchFavoriteData()
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  const { data: userData, refetch: userRefetch } = useQuery({
+    queryKey: ['user'],
+    queryFn: () => fetchUserData(),
+  })
 
-  if (!data) {
+  const likeMutation = useMutation(() => addLike(id), {
+    onSuccess: () => {
+      newsRefetch()
+      userRefetch()
+    },
+  })
+
+  const favoriteMutation = useMutation(() => toggleFavorite(id), {
+    onSuccess: () => {
+      refetchFavorite()
+    },
+  })
+
+  if (newsLoading || favoriteLoading) {
     return <div>Загрузка</div>
   }
-  console.log(favoriteData)
+  console.log(newsData)
+  console.log(userData)
+
   return (
     <Container maxWidth="sm">
       <Card>
@@ -73,7 +92,7 @@ const NewsDetailsPage: React.FC = () => {
           <CardMedia
             component="img"
             alt="green iguana"
-            image={data.photo}
+            image={newsData.photo}
             sx={{
               width: 800,
               height: 'auto',
@@ -88,11 +107,11 @@ const NewsDetailsPage: React.FC = () => {
               component="h2"
               sx={{ textAlign: 'center' }}
             >
-              {data.title}
+              {newsData.title}
             </Typography>
           </Box>
           <div
-            dangerouslySetInnerHTML={{ __html: data.content }}
+            dangerouslySetInnerHTML={{ __html: newsData.content }}
             color="text.secondary"
           ></div>
         </CardContent>
@@ -113,12 +132,12 @@ const NewsDetailsPage: React.FC = () => {
               }}
             >
               <Checkbox
-                onClick={addLike}
-                // checked={likes.includes()}
+                onClick={() => likeMutation.mutate()}
+                checked={newsData.likes.includes(userData.username)}
                 icon={<Favorite />}
                 checkedIcon={<Favorite color="primary" />}
               ></Checkbox>
-              <Typography>{data.total_likes}</Typography>
+              <Typography>{newsData.total_likes}</Typography>
             </Box>
             <IconButton>
               <Comment />
@@ -130,8 +149,8 @@ const NewsDetailsPage: React.FC = () => {
           <Checkbox
             icon={<BookmarkAdd />}
             checkedIcon={<BookmarkRemove />}
-            checked={favoriteData.includes(id)}
-            onChange={toggleFavorite}
+            checked={favoriteData.includes(Number(id))}
+            onChange={() => favoriteMutation.mutate()}
           />
         </CardActions>
       </Card>

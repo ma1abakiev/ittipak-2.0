@@ -23,6 +23,8 @@ const NewsList: React.FC<NewsCardProps> = ({ data, page, setPage }) => {
 
     return card.title?.toLowerCase().includes(searchText.toLowerCase())
   }
+  console.log(data)
+
   return (
     <>
       <Grid container spacing={5}>
