@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './index.css'
+import './style/index.css'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { ColorModeContext, useMode } from './theme'
@@ -39,6 +39,7 @@ const App = () => {
                     element={<RegistrationPage />}
                   ></Route>
                   <Route path="/user" element={<UserPage></UserPage>}></Route>
+                  <Route element={<Navigate to="/home" />} />
                 </Route>
               </Routes>
             </BrowserRouter>

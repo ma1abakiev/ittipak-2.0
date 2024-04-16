@@ -10,7 +10,6 @@ const Search = () => {
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(updateSearchText(e.target.value))
   }
-
   return (
     <CustomSearch>
       <SearchIconWrapper>

@@ -32,8 +32,8 @@ const NewsList: React.FC<NewsCardProps> = ({ data, page, setPage }) => {
           ?.slice((page - 1) * postsPerPage, page * postsPerPage)
           ?.filter(filterBySearchText)
           .map((card) => (
-            <Grid item xs={4} key={card.id}>
-              <NewsCard {...card} />
+            <Grid  item xs={4} key={card.id}>
+              <NewsCard  {...card} />
               <hr style={{ maxWidth: '845px', margin: '16px 0' }} />
             </Grid>
           ))}

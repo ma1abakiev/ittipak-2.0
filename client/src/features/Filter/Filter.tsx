@@ -13,7 +13,7 @@ const Filter = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            mt: '50px'
+            mt: '50px',
           }}
         >
           <Box sx={{ display: 'flex', alignItems: 'center' }}>

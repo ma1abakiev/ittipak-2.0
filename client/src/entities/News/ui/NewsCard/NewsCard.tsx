@@ -110,10 +110,11 @@ export default function NewsCard({
       />
       <Link to={`/news/${id}`}>
         <CardMedia
+          className='h-96'
           src={photo}
           component="img"
-          height="250"
           image={photo}
+          
           alt="Uyghur"
         />
       </Link>
